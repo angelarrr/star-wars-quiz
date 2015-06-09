@@ -4,13 +4,17 @@ body {
 	text-align: center;
 	font-family: 'Share Tech', sans-serif;
 	font-size: 1em;
+	text-transform: uppercase;
 }
 
 h1 {
 	font-size: 2em;
 	font-family: 'Monoton', cursive;
-	text-transform: uppercase;
 	margin: 0;
+}
+
+h2 {
+	font-size: 2em;
 }
 
 .header {
@@ -80,4 +84,26 @@ p {
 
 #nextquest {
 	margin-top: 2em;
+}
+
+.start-button {
+	border: none;
+	text-shadow: none;
+	background-color: black;
+	color: white;
+	font-size: 1em;
+	border-radius: 5px;
+	padding: 15px;
+	text-transform: uppercase;
+	font-family: 'Share Tech', sans-serif;
+}
+
+.start-button:hover {
+	background-color: #E8E8E8;
+	color: black;
+	cursor: pointer;
+}
+
+#introduction {
+	padding: 50px 0px;
 }
