@@ -39,30 +39,31 @@ p {
 
 #track {
 	padding-top: 20px;
+	display: none;
 }
 
 .fa {
 	color: #0659AD;
 }
 
-#questions {
+#questions-box {
 	margin: 1em 0 2em;
 }
 
-.choice {
-	text-shadow: none;
-	border: none;
-	background-color: #E8E8E8;
-	font-size: 1em;
-	/* border: solid 1px black; */
-	padding: 6px 8px;
-	margin-right: 3px;
-	margin-left: 3px;
-	border-radius: 5px;
+.answers input[type="radio"] {
+	display: none;
 }
 
-.choice:hover {
+input[type="radio"] + label {
+	display: inline-block;
+	padding: 10px;
 	cursor: pointer;
+	display:inline-block;
+	margin-bottom: 0;
+	cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
 	background-color: black;
 	color: white;
 }
@@ -84,9 +85,10 @@ p {
 
 #nextquest {
 	margin-top: 2em;
+	display: none;
 }
 
-.start-button {
+.start-button, .restart-button {
 	border: none;
 	text-shadow: none;
 	background-color: black;
@@ -98,7 +100,7 @@ p {
 	font-family: 'Share Tech', sans-serif;
 }
 
-.start-button:hover {
+.start-button:hover, .restart-button:hover {
 	background-color: #E8E8E8;
 	color: black;
 	cursor: pointer;
@@ -108,6 +110,11 @@ p {
 	padding: 50px 0px;
 }
 
-#completed {
+.final {
 	padding: 20px 0px;
+	display: none;
+}
+
+.answers {
+	margin-top: 2em;
 }

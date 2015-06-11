@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Share+Tech|Monoton' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
 </head>
 <body>
 
@@ -17,46 +19,39 @@
 	<div class="content">
 
 		<!-- Add html for introduction screen -->
-		<!-- <div id="introduction">
+		<div id="introduction">
 			<h2>may the force be with you</h2>
 			<button class="start-button">start quiz</button>
-		</div> -->
+		</div>
 
+		<!-- Track progress -->
 		<div id="track">
-			<i class="fa fa-circle-o"></i>
-			<i class="fa fa-circle"></i>
-			<i class="fa fa-circle"></i>
-			<i class="fa fa-circle"></i>
-			<i class="fa fa-circle"></i>
 		</div>
 
-		<div id="questions">
-			<p>what year was the first star wars movie released?</p>
+		<!-- Questions and answers box -->
+		<div id="questions-box">
 		</div>
 
-		<div id="answers">
-			<button class="choice">1972</button>
-			<button class="choice">1977</button>
-			<button class="choice">1980</button>
-			<button class="choice">1983</button>
-		</div>
 
+		<!-- Next Question button -->
 		<div id="nextquest">
-			<button type="submit" class="next-button">
+			<button type="submit"class="next-button">
 				<i class="fa fa-chevron-right"></i>
 				<i class="fa fa-chevron-right"></i>
 				<i class="fa fa-chevron-right"></i>
 			</button>
 		</div>
 
-		<!-- Add html for Completed quiz screen -->
-		<!-- <div id="completed">
-			<h3>congratulations!
-				<p>you completed the quiz!</p>
-				<p>you got <span class="count">0</span> out of 5 correct.</p>
-			</h3>
-			<button class="start-button">try again</button>
-		</div> -->
+		<!-- Completed screen -->
+		<div class="final">
+			<div id="completed">
+			</div>
+
+			<!-- Try again button -->
+			<div class="button">
+				<button class="restart-button">try again</button>
+			</div>
+		</div>
 	</div>
 	
 </body>
