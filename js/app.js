@@ -44,6 +44,9 @@ $(document).ready(function(){
 
 		var newQuestion = "<p id='question'>" + allQuestions[qCount].question + "</p><div class='answers'><input type='radio' class='radio' name='choice' id ='0' value='0'><label for='0'>" + allQuestions[qCount].choices[0] + "</label><input type='radio' class='radio' name='choice' id='1' value='1'><label for='1'>" + allQuestions[qCount].choices[1] + "</label><input type='radio' class='radio' name='choice' id='2' value='2'><label for='2'>" + allQuestions[qCount].choices[2] + "</label><input type='radio' class='radio' name='choice' id='3' value='3'><label for='3'>" + allQuestions[qCount].choices[3] + "</label></div>";
 	
+	// loop through choices and keep adding
+	// showQuestion method
+
 		$('#questions-box').html(newQuestion);	
 	};
 
